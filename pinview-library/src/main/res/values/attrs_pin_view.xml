@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="PinView">
-        
+        <attr name="editorBackground" format="reference|color" />
+        <attr name="editorCount" format="integer" />
+        <attr name="editorWidth" format="dimension" />
+        <attr name="editorHeight" format="dimension" />
+        <attr name="editorDividerWidth" format="dimension" />
+        <attr name="editorCursorVisible" format="boolean" />
+        <attr name="editorInputVisible" format="boolean" />
+        <attr name="editorForceKeyboard" format="boolean" />
+        <attr name="editorTextSize" format="dimension" />
+        <attr name="editorTextColor" format="color" />
+        <attr name="hint" format="string" />
+        <attr name="inputType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="number" value="0" />
+        </attr>
     </declare-styleable>
 </resources>

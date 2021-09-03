@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_editor_background">#FF3700B3</color>
+    <color name="default_editor_background_focused">#FFBB86FC</color>
+    <color name="default_editor_background_disabled">#FF6200EE</color>
+</resources>

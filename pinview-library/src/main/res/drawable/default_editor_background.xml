@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <padding android:top="@dimen/dp_10" android:left="@dimen/dp_10" android:right="@dimen/dp_10" android:bottom="@dimen/dp_10" />
+            <corners android:radius="@dimen/dp_5" />
+            <solid android:color="@color/default_editor_background_disabled" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true" android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <padding android:top="@dimen/dp_10" android:left="@dimen/dp_10" android:right="@dimen/dp_10" android:bottom="@dimen/dp_10" />
+            <corners android:radius="@dimen/dp_5" />
+            <solid android:color="@color/default_editor_background_focused" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:top="@dimen/dp_10" android:left="@dimen/dp_10" android:right="@dimen/dp_10" android:bottom="@dimen/dp_10" />
+            <corners android:radius="@dimen/dp_5" />
+            <solid android:color="@color/default_editor_background" />
+        </shape>
+    </item>
+</selector>
