@@ -10,5 +10,6 @@ package me.bytebeats.views.pinview
  */
 
 interface OnInputListener {
-    fun onEnter(view: PinView, fromUser: Boolean)
+    fun onInput(view: PinView, char: Char)
+    fun onFinish(view: PinView, fromUser: Boolean)
 }
