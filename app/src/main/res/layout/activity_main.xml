@@ -8,19 +8,69 @@
     android:gravity="top|center_horizontal"
     tools:context=".MainActivity">
 
-    <me.bytebeats.views.pinview.PinView
-        app:editorCount="6"
-        app:editorCursorVisible="true"
-        app:editorDividerWidth="15dp"
-        app:editorTextColor="@color/white"
-        app:editorInputMasked="false"
-        app:editorForceKeyboard="false"
-        app:editorTextSize="20sp"
-        app:editorWidth="40dp"
-        app:inputType="number"
-        app:hint="#"
-        app:editorHeight="40dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="end|center_vertical"
+            android:text="Expected:"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:gravity="center"
+            android:text="123456"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/editor"
+            android:paddingStart="10dp"
+            android:inputType="number|text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/prompt"
+        android:gravity="end|center_vertical"
+        android:text=""
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="end|center_vertical"
+            android:text="Password:"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <me.bytebeats.views.pinview.PinView
+            app:editorCount="6"
+            android:id="@+id/pin_view"
+            app:editorCursorVisible="true"
+            app:editorDividerWidth="15dp"
+            app:editorTextColor="@color/white"
+            app:editorInputMasked="false"
+            app:editorForceKeyboard="false"
+            app:editorTextSize="20sp"
+            app:editorWidth="30dp"
+            app:inputType="number"
+            app:hint="#"
+            app:editorHeight="30dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
 </LinearLayout>
