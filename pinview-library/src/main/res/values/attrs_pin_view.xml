@@ -7,14 +7,15 @@
         <attr name="editorHeight" format="dimension" />
         <attr name="editorDividerWidth" format="dimension" />
         <attr name="editorCursorVisible" format="boolean" />
-        <attr name="editorInputVisible" format="boolean" />
+        <attr name="editorInputMasked" format="boolean" />
         <attr name="editorForceKeyboard" format="boolean" />
         <attr name="editorTextSize" format="dimension" />
         <attr name="editorTextColor" format="color" />
+        <attr name="onlyNotifyUserInput" format="boolean" />
         <attr name="hint" format="string" />
         <attr name="inputType" format="enum">
             <enum name="text" value="0" />
-            <enum name="number" value="0" />
+            <enum name="number" value="1" />
         </attr>
     </declare-styleable>
 </resources>
